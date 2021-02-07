@@ -1,4 +1,4 @@
-# Get-Funds-from-ariva.de
+# The table that obtains funds from ariva.de
 The table obtains important European funds measures from ariva.de. Some European funds cannot be obtained because they are not available from ariva.de. The Excel should be set to German settings of numbers: "," is a decimal separator.
 The single important input parameter is a WKN (Wertpapierkennnummer, column C). 
 Other settings: 
