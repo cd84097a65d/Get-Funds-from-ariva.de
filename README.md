@@ -7,17 +7,16 @@ These columns are updated from ariva.de:
 -Country (Column E). The country is not always taken correctly. In this case it will stay empty. 
 - Sector (Column F) 
 - Benchmark (Column G) 
-- Currency (Column H): Always EUR. I have never seen other currencies up to now. Therefore the sheet "Currencies", existed in previous version was removed. 
+- Currency (Column H): Always EUR. TODO: Add real underlying currency of the fund. 
 - URL (Column I): If the cell is empty, it will be automatically updated from ariva.de. 
 - 3m-5yrs (Columns J:N): Returns of the fund in a period of 3 months to 5 years. Can be empty if the fund is younger. 
 - Date (Column O): After obtaining of the measures it will be set to the today's date. It is also used to avoid getting of the fund measurements from the net (if the today's date is used). 
-- Price (Column P): Price in currency from (Column H). 
+- Price (Column P): Price in Euro. 
 - Alpha (Column E): Alpha. 
 - Beta (Column E): Beta. 
 - Sharpe ratio (Column E): Sharpe ratio.
 
-The sorting of categories can be done according to the selection in a list box (approx. at cell FA). The categories are listed in cells A57:A65. The VBA code searches for the word "Sorting" above the list to give you more flexibility to add or remove funds.
-Columns AB: AI contains the positions of the measures inside corresponding category (3m-Sharpe ratio). The "Sum" (Column AJ) contains the sum of the positions over all categories.
+The sorting of categories can be done according to the selection in a list box (at cell F1). The categories are listed in cells A57:A65. The VBA code searches for the word "Sorting" (A56) above the list to give you more flexibility to add or remove funds.
+Columns AB:AI contains the positions of the measures inside corresponding category (3m-Sharpe ratio). The "Sum" (Column AJ) contains the sum of the positions over all categories.
 
 The measures in each category are highlighted according to the percentiles in rows 53-55. I prefer to use 85% percentile to highlight the values green and 15% percentiles to highlight them red.
-
