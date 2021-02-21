@@ -1,5 +1,9 @@
 # The table that obtains funds from ariva.de
-The table obtains important European funds measures from ariva.de. Some European funds cannot be obtained because they are not available from ariva.de. The Excel should be set to German settings of numbers: "," is a decimal separator.
+The table obtains important European funds measures from ariva.de. The description of the goals of the table can be and proof of the concept can be found at the [GitHub Pages]( https://cd84097a65d.github.io/Get-Funds-from-ariva.de/).  
+
+Some European funds cannot be obtained because they are not available from ariva.de. 
+
+The Excel should be set to German settings of numbers: "," is a decimal separator. 
 
 You have to install SeleniumBasic before you start to work with a table: https://florentbr.github.io/SeleniumBasic/
 You must also download the ChromeDriver according to the version of Chrome browser from: 
@@ -17,7 +21,7 @@ These columns are updated from ariva.de:
 - Country (Column G). The country is not always taken correctly. In this case it will stay empty. 
 - Sector (Column H) 
 - Benchmark (Column I) 
-- Currency (Column J): Underlying currency of the fund (since 10.02.2021)
+- Currency (Column J): Underlying currency of the fund
 - URL at ariva.de (Column K): If the cell is empty, it will be automatically updated from ariva.de. 
 - URL at finanzen.net (Column L): If the cell is empty, it will be automatically updated from finanzen.net (if necessary). 
 - 3m-5yrs (Columns M:Q): Returns of the fund in a period of 3 months to 5 years. Can be empty if the fund is younger. 
@@ -26,8 +30,6 @@ These columns are updated from ariva.de:
 - Alpha (Column T): Alpha. 
 - Beta (Column U): Beta. 
 - Sharpe ratio (Column V): Sharpe ratio.
-
-Additional measures from 10.02.2021:
 - Volatility (column W), 
 - Tracking error (column X), 
 - Correlation (column Y),
@@ -43,6 +45,4 @@ Columns AQ:BA contains the positions of the measures inside corresponding catego
 
 The measures in each category are highlighted according to the percentiles in rows 53-55. I prefer to use 85% percentile to highlight the values green and 15% percentiles to highlight them red.
 
-The yellow-marked cell in column A shows the newly added positions.
-
-The sheet “Results” shows that in general the positions that were growing in the past will be growing in the future (left graph). The positions wll give more return with increasing of the Sharpe ratio (right graph).
+The sheet “Results” represents a proof of the concept; for more information, read the [GitHub Pages]( https://cd84097a65d.github.io/Get-Funds-from-ariva.de/).
