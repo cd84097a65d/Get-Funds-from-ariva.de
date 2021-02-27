@@ -3,8 +3,6 @@ The table obtains important European funds measures from ariva.de. The descripti
 
 Some European funds cannot be obtained because they are not available from ariva.de. 
 
-The Excel should be set to German settings of numbers: "," is a decimal separator. 
-
 You have to install SeleniumBasic before you start to work with a table: https://florentbr.github.io/SeleniumBasic/
 You must also download the ChromeDriver according to the version of Chrome browser from: 
 https://sites.google.com/a/chromium.org/chromedriver/downloads
