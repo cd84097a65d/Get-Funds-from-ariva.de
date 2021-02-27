@@ -1,4 +1,8 @@
 Attribute VB_Name = "Selenium_ariva"
+' original page is:
+' https://github.com/cd84097a65d/Get-Funds-from-ariva.de
+' you are free to use/modify/sell this table as you wish
+
 Option Explicit
 
 Const ArivaDe = "https://ariva.de/"

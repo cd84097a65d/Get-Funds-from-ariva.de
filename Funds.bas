@@ -1,4 +1,8 @@
 Attribute VB_Name = "Funds"
+' original page is:
+' https://github.com/cd84097a65d/Get-Funds-from-ariva.de
+' you are free to use/modify/sell this table as you wish
+
 Option Explicit
 
 Const startingLine = 3      ' start line at sheet "Funds"
