@@ -14,8 +14,8 @@ The main reason to develop the strategy was to create the investment strategy th
 ### Proof of concept
 The main question is: are the positions that are profitable today will give good returns in the future? I have tried to answer this question below:
 - Sheet "Results", the graph at the left shows the dependency of 3 months performance in the future (3 months to now and 6 months to 3 months) as a function of performance in the past (6 months to 3 months  and 1 year to 6 months). The linear regression has a positive slope, which means that the profitable today positions will most probably stay profitable also in the future. 
-- My concept uses the investment in the positions from the top 1/3 of the positions with best performance over 3 months. The columns D and E show the positions with best performance (always over 3 months) 3 months ago and 6 months ago. The columns F and G show corresponding performance of these best positions now and 3 months ago. The performance now and 3 months ago is positive. 
-- The corresponding average performance of the best positions 3 months ago and now and 6 months ago and 3 months ago is shown in cells P1:P2 and P4:P5. The conclusion: The positions with best performance in the past are also growing in the future!
+- My concept uses the investment in the positions from the top 1/3 of the positions with best performance over 3 months. The columns D:E and F:G show the positions with best performance (always over 3 months) 3 months ago and 6 months ago. The columns F and G show corresponding performance of these best positions now and 3 months ago. The performance now and 3 months ago is positive. 
+- The corresponding average performance of the best positions 3 months ago and now and 6 months ago and 3 months ago is shown in cells R1:R2 and R4:R5. The conclusion: The positions with best performance in the past are also growing in the future!
 - The graph at the right shows that with increasing Sharpe ratio (over one year), the positions will have increasing performance in 3 months.
 
 ### License:
@@ -23,5 +23,4 @@ No license. You are allowed to use, modify, distribute or sell the table or algo
 
 ### TODO:
 - Add parsing of other web pages which could contain the information that is missed at ariva.de.
-- Make the table independent on the representation of decimal point (now it is ",").
 - May be check this strategies on shares or at least compare this strategy with returns from the shares.
