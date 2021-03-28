@@ -73,13 +73,13 @@ Function GetAriva_Fund(url$, wkn$, price$, currency_$, development$(), country$,
     currency_ = ConvertCurrencySymbolToCurrencyName(GetElementFromTheList("//div[2]/div[2]/div/table/tbody/tr[", "]/td", "]/td[2]", "Fondswährung"))
     
     ' alpha
-    alpha = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Alpha")
+    alpha = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Alpha")
     
     ' Sharpe ratio
-    sharpeRatio = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Sharpe-Ratio 1 Jahr")
+    sharpeRatio = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Sharpe-Ratio 1 Jahr")
     
     ' beta
-    beta = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Beta")
+    beta = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Beta")
     
     ' country
     country = GetElementFromTheList("//div[4]/div[2]/div/table/tbody/tr[", "]/td", "]/td[2]", "Aufgelegt in")
@@ -91,31 +91,31 @@ Function GetAriva_Fund(url$, wkn$, price$, currency_$, development$(), country$,
     sector = GetElementFromTheList("//div[4]/div[2]/div/table/tbody/tr[", "]/td", "]/td[2]", "Kategorie")
     
     ' volatility
-    volatility = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Volatilität 1 Jahr")
+    volatility = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Volatilität 1 Jahr")
     
     ' tracking error
-    trackingError = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Tracking Error")
+    trackingError = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Tracking Error")
     
     ' correlation
-    correlation = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Korrelation")
+    correlation = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Korrelation")
     
     ' skewness
-    skewness = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Schiefe")
+    skewness = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Schiefe")
     
     ' kurtosis
-    kurtosis = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Kurtosis")
+    kurtosis = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Kurtosis")
     
     ' Sortino ratio
-    sortinoRatio = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Sortino Ratio")
+    sortinoRatio = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Sortino Ratio")
     
     ' Information ratio
-    informationRatio = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Information Ratio")
+    informationRatio = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Information Ratio")
     
     ' R2
-    r2 = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "R-Squared")
+    r2 = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "R-Squared")
     
     ' Treynor Ratio
-    treynorRatio = GetElementFromTheList("//div[4]/div/table/tbody/tr[", "]/td", "]/td[2]", "Treynor Ratio")
+    treynorRatio = GetElementFromTheList("//div[4]/div/div/table/tbody/tr[", "]/td", "]/td[2]", "Treynor Ratio")
     
     DoEvents
     Call Sleep(RandomRange(5000, 15000))
