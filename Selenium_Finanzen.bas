@@ -149,6 +149,7 @@ End Function
 
 Sub CloseSeleniumDriver()
     If Not (SeleniumDriver_finanzen Is Nothing) Then
+        SeleniumDriver_finanzen.Close
         SeleniumDriver_finanzen.Quit
     End If
 End Sub

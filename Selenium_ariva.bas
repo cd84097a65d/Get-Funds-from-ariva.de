@@ -140,6 +140,7 @@ End Function
 
 Sub CloseSeleniumDriver()
     If Not (SeleniumDriver_ariva Is Nothing) Then
+        SeleniumDriver_ariva.Close
         SeleniumDriver_ariva.Quit
     End If
 End Sub
