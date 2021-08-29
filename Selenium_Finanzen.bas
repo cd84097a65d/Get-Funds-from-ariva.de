@@ -6,7 +6,7 @@ Attribute VB_Name = "Selenium_Finanzen"
 Option Explicit
 
 Const FinanzenNet = "https://www.finanzen.net/"
-Const consentUUID = "45a9d072-f0f9-48bb-92e8-04e324cad5af"
+Const consentUUID = "6e7e9941-db0a-4c19-99a1-1959b6d0e277"
 
 Private SeleniumDriver_finanzen As ChromeDriver
 Private seleniumStarted As Boolean
@@ -65,14 +65,14 @@ Function GetFinanzen_Fund(url$, wkn$, development$(), currency_$, country$, benc
         End If
         
         currency_ = FindElementsByXPath(SeleniumDriver_finanzen, "//div/div/div[4]/div[2]/div", "Currency")
-        country = FindElementsByXPath(SeleniumDriver_finanzen, "//div[20]/div/div[2]/div[2]/div[2]", "Country")
-        benchmark = FindElementsByXPath(SeleniumDriver_finanzen, "//div[5]/div[2]/div", "Benchmark")
+        country = FindElementsByXPath(SeleniumDriver_finanzen, "//div[18]/div/div[2]/div[2]/div[2]", "Country")
+        ' benchmark = FindElementsByXPath(SeleniumDriver_finanzen, "//div[5]/div[2]/div", "Benchmark")
         
-        development(1) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[" & i & "]/div/table/tbody/tr/td[2]", "3m"))
-        development(2) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[" & i & "]/div/table/tbody/tr/td[3]", "6m"))
-        development(3) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[" & i & "]/div/table/tbody/tr/td[4]", "1yr"))
-        development(4) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[" & i & "]/div/table/tbody/tr/td[5]", "3yrs"))
-        development(5) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[" & i & "]/div/table/tbody/tr/td[6]", "5yrs"))
+        development(1) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[8]/div/table/tbody/tr/td[2]", "3m"))
+        development(2) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[8]/div/table/tbody/tr/td[3]", "6m"))
+        development(3) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[8]/div/table/tbody/tr/td[4]", "1yr"))
+        development(4) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[8]/div/table/tbody/tr/td[5]", "3yrs"))
+        development(5) = CheckValue_prc(FindElementsByXPath(SeleniumDriver_finanzen, "//div[8]/div/table/tbody/tr/td[6]", "5yrs"))
         
         tmpString = tmpString
     Else

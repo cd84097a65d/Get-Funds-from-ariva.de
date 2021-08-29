@@ -6,7 +6,7 @@ Attribute VB_Name = "Selenium_ariva"
 Option Explicit
 
 Const ArivaDe = "https://ariva.de/"
-Const consentUUID = "afaea167-eac1-4499-94b6-d1791512d9e9"
+Const consentUUID = "e47e46c6-5b81-46cf-ace7-be5302056448"
 
 Private SeleniumDriver_ariva As ChromeDriver
 Private seleniumStarted As Boolean
